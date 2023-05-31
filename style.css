@@ -20,7 +20,7 @@ body{
     --color-light-blue: #6bc5f8;
     }
 
-.header{
+#header{
     width: 100%;
     height: 100vh;
     background-image: url(images/bg.png);
@@ -98,7 +98,7 @@ body{
     animation: gradient 5s ease infinite;
 }
  /* PROJECTS */
-.projects{
+#projects{
     width: 100%;
     height: 100vh;
     padding: 5%;
