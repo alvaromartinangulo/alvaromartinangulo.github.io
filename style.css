@@ -11,12 +11,11 @@
     color:#fff;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 .container h1{
-    font-size: 9rem;
+    font-size: 5vw;
     font-weight: 600;
-    line-height: 100%;
 }
 span{
     color:lightgreen
