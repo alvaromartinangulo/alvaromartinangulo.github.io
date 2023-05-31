@@ -40,6 +40,11 @@ body{
     font-size: 1.5vw;
     font-weight: 500;
 }
+.italic{
+    font-style: italic;
+    font-size: 0.8vw;
+    font-weight: 500;
+}
 
 .multicolor{
     background: linear-gradient(-45deg,var(--color-light-blue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple));
@@ -91,4 +96,25 @@ body{
     -webkit-text-fill-color: transparent;
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
+}
+ /* PROJECTS */
+.projects{
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+}
+.leftallign{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.leftcol1{
+    flex-basis: 40%;
+}
+.leftcol1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.leftcol2{
+    flex-basis: 55%;
 }
