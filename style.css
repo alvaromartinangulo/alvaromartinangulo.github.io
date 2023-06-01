@@ -13,7 +13,7 @@ body{
 }
 #header{
     width: 100%;
-    height: 100vh;
+    padding-bottom: 15%;
 }
 
 .container{
@@ -108,15 +108,123 @@ body{
     background-size: 150% 150%;
     animation: gradient 5s ease infinite;
 }
+/*ABOUT ME*/
 #aboutme{
     background: linear-gradient(-45deg,#B0DAFF, #19A7CE, #146C94);
     transform: skewY(-5deg);
     width: 100%;
-    height: 100vh;
     padding: 5%;
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
 }
+.map{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.map img{
+    object-fit: contain;
+}
+.pin{
+    background: #ffffff;
+    position: absolute;
+    width: 0.7em;
+    height:0.7em;
+    border-radius: 50%;
+}
+.pin::before{
+    content: '';
+    background: #ffffff;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: pulse 1.5s ease-in-out infinite;
+    z-index: 1;
+}
+
+.pin span{
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    left: 1.5vw;
+    top:50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border-radius: 3vw;
+    padding: 0.3vw 0.6vw;
+    font-size: 0.9vw;
+    color: transparent;
+    transition:0.5s;
+    z-index: 1;
+}
+.asturiaspin{
+    top:72%;
+    left:63%;
+}
+.madridpin{
+    top:83%;
+    left:65%;
+}
+.bilbaopin{
+    top:75%;
+    left:74%;
+}
+.valenciapin{
+    top:83%;
+    left:82%;
+}
+.barcelonapin{
+    top:78%;
+    left:86%;
+}
+.palmaspin{
+    top: 87%;
+    left:20.5%;
+}
+.edinburghpin{
+    top:30%;
+    left:74%;
+}
+.madridpin:hover #MadridText{
+    background: #fff;
+    color:#3a3a3a;
+}
+.asturiaspin:hover #AsturiasText{
+    background: #fff;
+    color:#3a3a3a;
+}
+.bilbaopin:hover #BilbaoText{
+    background: #fff;
+    color:#3a3a3a;
+}
+.barcelonapin:hover #BarcelonaText{
+    background: #fff;
+    color:#3a3a3a;
+}
+.valenciapin:hover #ValenciaText{
+    background: #fff;
+    color:#3a3a3a;
+}
+.edinburghpin:hover #EdinburghText{
+    background: #fff;
+    color:#3a3a3a;
+}
+.palmaspin:hover #PalmasText{
+    background: #fff;
+    color:#3a3a3a;
+}
+@keyframes pulse {
+    100%{
+        opacity: 0%;
+        transform: scale(2.5, 2.5) translateX(-20%) translateY(-20%);
+    }
+}
+
+
  /* PROJECTS */
 #projects{
     background:#fff; 
@@ -138,7 +246,7 @@ body{
     flex-basis: 41%;
 }
 .leftcol1 img{
-    background: linear-gradient(-45deg,#B0DAFF, #19A7CE, #146C94);
+
     width: 100%;
     border-radius: 15px;
     border: 4px solid transparent;
