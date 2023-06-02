@@ -42,10 +42,13 @@ h1{
     transform: translateY(-50%);
 }
 .lheader h2{
+    top:25%
+}
+h2{
     font-size: 1.5vw;
     font-weight: 300;
     position: relative;
-    top: 25%;
+    
 }
 .rheader{
     flex-basis: 35%;
@@ -114,6 +117,7 @@ h1{
     background: linear-gradient(-45deg,#B0DAFF, #19A7CE, #146C94);
     transform: skewY(-5deg);
     width: 100%;
+    height: fit-content;
     padding: 5%;
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
@@ -145,7 +149,7 @@ h1{
     height: 100%;
     border-radius: 50%;
     animation: pulse 1.5s ease-in-out infinite;
-    z-index: 1;
+    z-index: -1;
 }
 
 .pin span{
@@ -161,7 +165,7 @@ h1{
     font-size: 0.9vw;
     color: transparent;
     transition:0.5s;
-    z-index: 1;
+    z-index: -1;
 }
 .asturiaspin{
     top:72%;
@@ -194,30 +198,37 @@ h1{
 .madridpin:hover #MadridText{
     background: #fff;
     color:#3a3a3a;
+    z-index: 1;
 }
 .asturiaspin:hover #AsturiasText{
     background: #fff;
     color:#3a3a3a;
+    z-index: 1;
 }
 .bilbaopin:hover #BilbaoText{
     background: #fff;
     color:#3a3a3a;
+    z-index: 1;
 }
 .barcelonapin:hover #BarcelonaText{
     background: #fff;
     color:#3a3a3a;
+    z-index: 1;
 }
 .valenciapin:hover #ValenciaText{
     background: #fff;
     color:#3a3a3a;
+    z-index: 1;
 }
 .edinburghpin:hover #EdinburghText{
     background: #fff;
     color:#3a3a3a;
+    z-index: 1;
 }
 .palmaspin:hover #PalmasText{
     background: #fff;
     color:#3a3a3a;
+    z-index: 1;
 }
 @keyframes pulse {
     100%{
@@ -225,7 +236,31 @@ h1{
         transform: scale(2.5, 2.5) translateX(-20%) translateY(-20%);
     }
 }
-
+.bold{
+    font-weight: 450;
+}
+#aboutme a{
+    color:#fff;
+}
+/*TECHNOLOGIES*/
+#technologies{
+    background:#fff; 
+    transform: skewY(-5deg);
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+}
+#technologies h1{
+    transform: skewY(5deg);
+    width:100%;
+    text-align: center;
+    background: linear-gradient(-45deg,#B0DAFF, #19A7CE, #146C94);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
 
  /* PROJECTS */
 #projects{
@@ -239,8 +274,10 @@ h1{
 .lefttitle{
     transform: skewY(5deg);
     width: 100%;
+    position:relative
 }
 .lefttitle h1{
+    position:relative;
     text-align: center;
     color:#fff
 }
@@ -248,22 +285,18 @@ h1{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-	margin: 0 auto;
+	margin: 0 0;
 	transform: skewY(5deg);
 }
 .leftcol1{
     flex-basis: 30%;
 }
 .leftcol1 img{
-
     width: 100%;
     border-radius: 15px;
-    border: 4px solid transparent;
-    background-clip: border;
-    -webkit-background-clip: border;
-    background-size: 150% 150%;
-    animation: gradient 5s ease infinite;
 }
 .leftcol2{
-    flex-basis: 55%;
+    vertical-align: top;
+    position:relative;
+    flex-basis: 65%;
 }
