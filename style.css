@@ -262,17 +262,38 @@ h2{
 }
 
 .column {
-    border: 3px solid #00bef3;
     width: 30%;
     padding: 2% 2%;
     background: #fff;
     border-radius: 10%;
+    text-align: center;
+
 }
 .row{
     justify-content: space-between;
     transform: skewY(5deg);
     width: 100%;
     display: flex;
+}
+#technologies ul{
+    display: inline-block;
+    text-align: left;  
+}
+#technologies ul li{
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 1.3em;
+}
+#technologies ul h1{
+    font-size: 2em;
+    font-weight: 500;
+    transform: skewY(0deg);
+}
+#technologies img{
+    height: 1em;
+    width: auto;
+    margin-top: 0.25em;
+    border-right: 1em solid transparent;
 }
 
  /* PROJECTS */
