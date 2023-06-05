@@ -57,9 +57,7 @@ h2{
     background: linear-gradient(-45deg,#B0DAFF, #19A7CE, #146C94);
     width: 100%;
     position: relative;
-    top: 80%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); 
+    top: 30%;
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
 }
