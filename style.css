@@ -63,12 +63,8 @@ h2{
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
 }
-
-#header nav img{
-    background: #3a3a3a;
-    border-radius: 15%;
-    height: 1em;
-    width: auto;
+#header i{
+    size: 2vw;
 }
 .italic{
     font-style: italic;
@@ -99,14 +95,16 @@ h2{
 
 .container nav{
     justify-content: space-between;
-    flex-wrap: wrap;
+    width:95%;
     position: fixed;
+    display: flex;
     z-index: 1;
 }
 .container nav ul li{
     display: inline-block;
-    margin: 0 20px;
+    margin-right: 20px;
 }
+
 .container nav ul li a{
     color:#3a3a3a;
     text-decoration: none;
@@ -119,6 +117,20 @@ h2{
     -webkit-text-fill-color: transparent;
     background-size: 150% 150%;
     animation: gradient 5s ease infinite;
+}
+.icon{
+    font-size: 1.5vw;
+}
+.icon:hover{
+    background: linear-gradient(-45deg,#B0DAFF, #19A7CE, #146C94);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 150% 150%;
+    animation: gradient 5s ease infinite;
+}
+.rightflex{
+    margin-left: auto;
 }
 /*ABOUT ME*/
 #aboutme{
